@@ -1,0 +1,405 @@
+body {
+  overflow: hidden;
+  background: #AAB4E5;
+  font-family: 'Minecraft Regular', 'Courier New', monospace;
+  letter-spacing: 3px;
+}
+
+body::after{
+  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+  content:url("../img/dirt.png");
+}
+
+h1,h2,h3,p {
+  margin: 0;
+}
+
+#container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#container canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  -webkit-filter: blur(11px);
+  filter: blur(11px);
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+header {
+  position: relative;
+  width: 548px;
+  max-width: 100%;
+  min-width: 274px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+header img {
+  width: 100%;
+}
+
+#splash {
+  bottom: 10px;
+  right: 100px;
+  color: #FFFF00;
+  font-size: 1.2em;
+  text-shadow:3px 3px #3F3F00;
+  position: absolute;
+}
+
+
+#splashSecond {
+  bottom: -8px;
+  right: 155px;
+  color: #ea00ff;
+  font-size: 0.7em;
+  text-shadow:1px 1px #3F3F00;
+  position: absolute;
+}
+
+.pop {
+  animation: pop 0.58s infinite;
+  -webkit-animation: pop 0.58s infinite;
+}
+@keyframes pop {
+  from {
+      transform:scale(0.95)
+  }
+  50% {
+      transform:scale(1)
+  }
+  to {
+      transform:scale(0.95)
+  }
+}
+
+.tilt {
+  -ms-transform:  translateX(30%) rotate(-20deg);;
+  -webkit-transform:  translateX(30%) rotate(-20deg);;
+  transform:  translateX(30%) rotate(-20deg);
+}
+
+main {
+  position: relative;
+  width: 400px;
+  margin: 140px auto 0;
+}
+
+button {
+  display: block;
+  width: 390px;
+  margin-bottom: 8px;
+  padding: 6px 0 10px;
+  border: 2px solid #000;
+  outline: none;
+  box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.3), inset -2px 2px 0 rgba(255, 255, 255, 0.3), inset 0px -4px 0 rgba(0, 0, 0, 0.3);
+  background: #6A6A6A;
+  font-family: 'Minecraft Regular', 'Courier New', monospace;
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.5px;
+  color: #FFF;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover
+{
+  color: yellow;
+  border: 2px solid #FFF;
+}
+
+/*button[id="btnPlayerList"]:hover > .tooltiptext*/
+button:hover > .tooltiptext
+{
+  visibility: visible;
+}
+
+.btn-small {
+  width: 192.5px;
+  float: left;
+  margin-left: 5px;
+}
+
+footer {
+  color: #FFF;
+}
+
+footer p {
+  position: absolute;
+  bottom: 4px;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+footer .version {
+  left: 6px;
+}
+
+footer .copyright {
+  right: 6px;
+}
+
+@font-face {
+  font-family:'Minecraft Regular';src:url("../font/minecraft-regular.eot?") format("eot"), url("../font/minecraft-regular.woff") format("woff"), url("../font/minecraft-regular.ttf") format("truetype"), url("../font/minecraft-regular.svg#Minecraft") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+
+.inOption
+{
+  width: 700px;
+  height: 500px;
+  opacity: 0.9;
+  background-image: url("../img/dirt.png");
+  text-align: center;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  color: white;
+}
+
+.inOptTitle
+{
+  padding: 10px;
+  color: rgb(245, 245, 245);
+  width: 500px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 100;
+}
+
+.inOptBoxTitle
+{
+  width: 400px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding: 5px;
+  color: #8f8f8f;
+}
+
+.playerList
+{
+  width: 600px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  color: white;
+  overflow-y: scroll;
+}
+
+.playerBox
+{
+  width: 285px;
+  height: 20px;
+  background-color: rgb(63, 63, 63, 0.5);
+  border: 1px solid #ffffff;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.playerAvatar
+{
+  width: 16px;
+  height: 16px;
+  display: block;
+  float: left;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.playerName
+{
+  width: 262px;
+  height: 16px;
+  display: block;
+  float: left;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.playerListOnlineCounter
+{
+  color: white;
+  margin-bottom: 7px;
+}
+
+.blackBox {
+  display: block;
+  width: 400px;
+  height: 20px;
+  margin-bottom: 8px;
+  padding: 6px 5px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  resize: none;
+  border: 2px solid #ffffff;
+  outline: none;
+  background: #000000;
+  font-family: 'Minecraft Regular', 'Courier New', monospace;
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 0.5px;
+  color: #FFF;
+}
+
+
+.playerListButton {
+  display: block;
+  width: 386px;
+  margin-bottom: 8px;
+  padding: 6px 0 10px;
+  border: 2px solid #000;
+  outline: none;
+  box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.3), inset -2px 2px 0 rgba(255, 255, 255, 0.3), inset 0px -4px 0 rgba(0, 0, 0, 0.3);
+  background: #6A6A6A;
+  font-family: 'Minecraft Regular', 'Courier New', monospace;
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.5px;
+  color: #FFF;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: #180025;
+  color: #fff;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #440044;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  opacity: 0.80;
+  border-radius: 5%;
+}
+
+/* width - scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track - scrollbar */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(0, 0, 0);
+  background:rgb(0, 0, 0);
+}
+
+/* Handle - scrollbar */
+::-webkit-scrollbar-thumb {
+  background: rgb(179, 179, 179);
+}
+
+
+.rainbow-bg{
+  animation: rainbow-bg 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+.rainbow{
+  animation: rainbow 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow-bg{
+  100%,0%{
+    background-color: rgb(255,0,0);
+  }
+  8%{
+    background-color: rgb(255,127,0);
+  }
+  16%{
+    background-color: rgb(255,255,0);
+  }
+  25%{
+    background-color: rgb(127,255,0);
+  }
+  33%{
+    background-color: rgb(0,255,0);
+  }
+  41%{
+    background-color: rgb(0,255,127);
+  }
+  50%{
+    background-color: rgb(0,255,255);
+  }
+  58%{
+    background-color: rgb(0,127,255);
+  }
+  66%{
+    background-color: rgb(0,0,255);
+  }
+  75%{
+    background-color: rgb(127,0,255);
+  }
+  83%{
+    background-color: rgb(255,0,255);
+  }
+  91%{
+    background-color: rgb(255,0,127);
+  }
+}
+
+@keyframes rainbow{
+  100%,0%{
+    color: rgb(255,0,0);
+  }
+  8%{
+    color: rgb(255,127,0);
+  }
+  16%{
+    color: rgb(255,255,0);
+  }
+  25%{
+    color: rgb(127,255,0);
+  }
+  33%{
+    color: rgb(0,255,0);
+  }
+  41%{
+    color: rgb(0,255,127);
+  }
+  50%{
+    color: rgb(0,255,255);
+  }
+  58%{
+    color: rgb(0,127,255);
+  }
+  66%{
+    color: rgb(0,0,255);
+  }
+  75%{
+    color: rgb(127,0,255);
+  }
+  83%{
+    color: rgb(255,0,255);
+  }
+  91%{
+    color: rgb(255,0,127);
+  }
+}
