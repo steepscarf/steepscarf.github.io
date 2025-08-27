@@ -1,1 +1,49 @@
-welcome SteepScarf
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Serwer Minecraft Surival Czary Mod">
+    <meta name="keywords" content="Minecraft, Survial, Eternal Adventure">
+   
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title>Eternal Adventure - Minecraft</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div id="container"></div> 
+    <div id="overlay"></div>
+    <header>
+        <img src="logo.svg" alt="Minecraft">
+        <div class="tilt">
+            <div id="splash" class="pop">Eternal Adventure</div>
+            <div id="splashSecond" class="rainbow">Nowa edycja!</div>
+    </header>
+    <div id="inoptioncontent">
+    </div>
+    <main>
+        <button type="button" id="btnPlay">Zagraj!</button>
+        <button type="button" id="btnPlayerList">Lista graczy <span id="tipPlayerList" class="tooltiptext">Wczytywanie...</span></button>
+        <button type="button" id="btnShop">Eternal ItemShop</button>
+        <div style="height:20px"></div>
+        <button class="btn-small" type="button" id="btnDiscord">Discord</button>
+        <button class="btn-small" type="button" id="btnLive">YouTube Live <span style="font-size: 11px;">🔴</span></button>
+        <button class="btn-small" type="button" id="btnAntyBot">Weryfikacja IP</button>
+    </main>
+    <footer>
+        <p class="version">Minecraft 1.21</p>
+        <p class="copyright">Copyright Eternal Adventure. Do not distribute!</p>
+    </footer>
+    <script src="js/three.min.js"></script>
+    <script src="js/EffectComposer.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/event.js"></script>
+</body>
+</html>
