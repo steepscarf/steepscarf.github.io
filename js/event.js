@@ -90,7 +90,7 @@ function onAntyBotClick() {
 
 function copyAddressToClipboard() {
     clickAudio.play();
-    navigator.clipboard.writeText("play.eadventure.pl");
+    navigator.clipboard.writeText("steepscarf.aternos.me");
     let handle_infoCopy = document.getElementById("infoCopy");
     handle_infoCopy.style.textAlign = "center";
     handle_infoCopy.style.color = "lightgreen";
@@ -234,5 +234,6 @@ function getFullPlayerList() {
         }
     });
 }
+
 
 
