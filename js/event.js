@@ -36,7 +36,7 @@ function onPlayClick() {
     <div class="inOptBoxTitle">Nazwa serwera</div>\
     <textarea class="blackBox" disabled>SteepScarf Adventure</textarea>\
     <div class="inOptBoxTitle">Adres serwera</div>\
-    <textarea id="ipAddress" class="blackBox" disabled>play.eadventure.pl</textarea>\
+    <textarea id="ipAddress" class="blackBox" disabled>steepscarf.aternos.me</textarea>\
     <button type="button" id="btnCopyIP">Skopiuj adres serwera</button>\
     <div class="inOptBoxTitle" id="infoCopy"></div>\
     <div style="height:175px"></div>\
@@ -234,4 +234,5 @@ function getFullPlayerList() {
         }
     });
 }
+
 
