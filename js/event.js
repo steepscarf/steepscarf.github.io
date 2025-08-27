@@ -34,7 +34,7 @@ function onPlayClick() {
     inoption_content.innerHTML = '<div class="inOption">\
     <div class="inOptTitle">Dane serwera</div>\
     <div class="inOptBoxTitle">Nazwa serwera</div>\
-    <textarea class="blackBox" disabled>Eternal Adventure</textarea>\
+    <textarea class="blackBox" disabled>SteepScarf Adventure</textarea>\
     <div class="inOptBoxTitle">Adres serwera</div>\
     <textarea id="ipAddress" class="blackBox" disabled>play.eadventure.pl</textarea>\
     <button type="button" id="btnCopyIP">Skopiuj adres serwera</button>\
@@ -63,12 +63,12 @@ function onPlayerListClick() {
 
 function onShopClick() {
     clickAudio.play();
-    window.open("https://sklep.eadventure.pl");
+    window.open("https://sklep.steepscarf.github.io");
 }
 
 function onDiscordClick() {
     clickAudio.play();
-    window.open("https://discord.eadventure.pl");
+    window.open("https://discord.gg/psSudzBuDZ");
 }
 
 function onBackClick() {
@@ -80,12 +80,12 @@ function onBackClick() {
 
 function onLiveClick() {
     clickAudio.play();
-    window.open("https://www.youtube.com/watch?v=DETvAD4_zu4");
+    window.open("https://www.youtube.com/@SteepScarf");
 }
 
 function onAntyBotClick() {
     clickAudio.play();
-    window.open("https://eadventure.pl/antibot.html");
+    window.open("https://steepscarf.github.io/antibot.html");
 }
 
 function copyAddressToClipboard() {
@@ -234,3 +234,4 @@ function getFullPlayerList() {
         }
     });
 }
+
