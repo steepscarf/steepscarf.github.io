@@ -20,7 +20,7 @@ let players_now = 0;
 let players_max = 0;
 let sampleArrayPlayersOnline = Array();
 let fullArrayPlayersOnline = Array();
-let playerSampleList = "Wczytywanie...";
+let playerSampleList = "Loading...";
 
 let lastHintCoord = new Array(2);
 
@@ -32,15 +32,15 @@ function onPlayClick() {
     main_handle.innerHTML = '';
     mainMenu_Shown = false;
     inoption_content.innerHTML = '<div class="inOption">\
-    <div class="inOptTitle">Dane serwera</div>\
-    <div class="inOptBoxTitle">Nazwa serwera</div>\
+    <div class="inOptTitle">Server data</div>\
+    <div class="inOptBoxTitle">Server name</div>\
     <textarea class="blackBox" disabled>SteepScarf Adventure</textarea>\
-    <div class="inOptBoxTitle">Adres serwera</div>\
+    <div class="inOptBoxTitle">Server address</div>\
     <textarea id="ipAddress" class="blackBox" disabled>steepscarf.aternos.me</textarea>\
-    <button type="button" id="btnCopyIP">Skopiuj adres serwera</button>\
+    <button type="button" id="btnCopyIP">Skopiuj server address</button>\
     <div class="inOptBoxTitle" id="infoCopy"></div>\
     <div style="height:175px"></div>\
-    <button type="button" id="btnBack">Wstecz</button> \
+    <button type="button" id="btnBack">Back</button> \
 </div>';
     document.querySelector("#btnBack").addEventListener("click", onBackClick);
     document.querySelector("#btnCopyIP").addEventListener("click", copyAddressToClipboard);
@@ -68,7 +68,7 @@ function onShopClick() {
 
 function onDiscordClick() {
     clickAudio.play();
-    window.open("https://discord.gg/psSudzBuDZ");
+    window.open("https://discord.gg/EpM9reXTWw");
 }
 
 function onBackClick() {
@@ -94,7 +94,7 @@ function copyAddressToClipboard() {
     let handle_infoCopy = document.getElementById("infoCopy");
     handle_infoCopy.style.textAlign = "center";
     handle_infoCopy.style.color = "lightgreen";
-    handle_infoCopy.innerHTML = "Skopiowano adres IP serwera!"
+    handle_infoCopy.innerHTML = "Server IP address copied!"
 }
 
 function mainMenuEventRegister() {
